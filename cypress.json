@@ -1,7 +1,12 @@
 {
-    "watchForFileChanges":false,
-    "screenshotsFolder":"D:/Courses/Testing Courses/Automation Testing/Automation_Projects/CypressProject/Media",
-    "reporter": "cypress-mochawesome-reporter"
-
-      
-}
+    "watchForFileChanges": false,
+    "screenshotsFolder": "D:/Courses/Testing Courses/Automation Testing/Automation_Projects/CypressProject/Media",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "reportDir": "cypress/mochawesome-report",
+      "overwrite": false,
+      "html": true,
+      "json": true
+    }
+  }
+  
