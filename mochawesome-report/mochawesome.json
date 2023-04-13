@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-13T21:23:52.959Z",
+    "end": "2023-04-13T21:24:08.385Z",
+    "duration": 15426,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5e9c413e-81d8-4e7a-b08b-2288b5555e99",
+      "title": "",
+      "fullFile": "cypress/integration/Registration.cy.js",
+      "file": "cypress/integration/Registration.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8f565338-1e3f-4030-91ed-57e3dd7b100a",
+          "title": "Registration Scenarios",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Valid Registration Script for e-commerce website",
+              "fullTitle": "Registration Scenarios Valid Registration Script for e-commerce website",
+              "timedOut": null,
+              "duration": 7128,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Choose MALE as the gender\ncy.get('#gender-male').click(); // Enter FIRST NAME\nregistrationPage.enterFisrtName(\"Ahmed\"); // Enter LAST NAME\nregistrationPage.enterLastName(\"Ali\"); // Select BirthDay\ncy.get('[name=\"DateOfBirthDay\"]').select(\"3\"); // Select BirthMonth\ncy.get('[name=\"DateOfBirthMonth\"]').select(\"5\"); // Select BirthYear\ncy.get('[name=\"DateOfBirthYear\"]').select(\"2000\"); // Enter email\nregistrationPage.enterEmail(\"ahmedal@gmail.com\"); // Enter Company Name\ncy.get('#Company').type(\"Professional Tester\"); // Enter Password\ncy.get('#Password').type(\"AHMEDali123\"); // Confirm Password\ncy.get('#ConfirmPassword').type(\"AHMEDali123\"); // Click on Register Button \nregistrationPage.registrationBtn(); // Assert that the successful message appears with the expected color\ncy.get('.result').should('be.visible').and('have.css', 'color', 'rgb(76, 177, 124)'); // Green color in RGB format",
+              "err": {},
+              "uuid": "9d2a17a0-2753-4abb-a662-261d1dd03b25",
+              "parentUUID": "8f565338-1e3f-4030-91ed-57e3dd7b100a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Invalid Registration Script for e-commerce website",
+              "fullTitle": "Registration Scenarios Invalid Registration Script for e-commerce website",
+              "timedOut": null,
+              "duration": 5170,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Choose MALE as the gender\ncy.get('#gender-male').click(); // Enter FIRST NAME\nregistrationPage.enterFisrtName(\"Ahmed\"); // Enter LAST NAME\nregistrationPage.enterLastName(\"Ali\"); // Select BirthDay\ncy.get('[name=\"DateOfBirthDay\"]').select(\"3\"); // Select BirthMonth\ncy.get('[name=\"DateOfBirthMonth\"]').select(\"5\"); // Select BirthYear\ncy.get('[name=\"DateOfBirthYear\"]').select(\"2000\"); // Enter email\nregistrationPage.enterEmail(\"ahmedal@gmail.com\"); // Enter Company Name\ncy.get('#Company').type(\"Professional Tester\"); // Enter Password\ncy.get('#Password').type(\"AHMEDali123\"); // Confirm Password\ncy.get('#ConfirmPassword').type(\"AHMEDali123\"); // Click on Register Button \nregistrationPage.registrationBtn(); // Assert that the error message appears with the expected color\ncy.get('.message-error > ul > li').should('be.visible').and('have.css', 'color', 'rgb(228, 67, 75)'); // Red color in RGB format",
+              "err": {},
+              "uuid": "afcf93b4-ec28-417a-8048-9d1a802ec16e",
+              "parentUUID": "8f565338-1e3f-4030-91ed-57e3dd7b100a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9d2a17a0-2753-4abb-a662-261d1dd03b25",
+            "afcf93b4-ec28-417a-8048-9d1a802ec16e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12298,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

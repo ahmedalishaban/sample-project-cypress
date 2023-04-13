@@ -1,5 +1,7 @@
 /// <reference types="cypress"/>
 import { registration } from "./pages/registration_page"
+// Import the reporter
+import 'cypress-mochawesome-reporter/register';
 
 const registrationPage = new registration()
 
